@@ -8,12 +8,22 @@
 #         }
 #       }'
 
-      curl --include --request POST http://localhost:3000/posts \
-      --header "Content-Type: application/json" \
-      --data '{
-              "post": {
-                "title": "I got the diabetes",
-                "content": "HALP",
-                "user_id": 3
-              }
-            }'
+# curl --include --request POST http://localhost:3000/posts \
+# --header "Content-Type: application/json" \
+# --data '{
+#         "post": {
+#           "title": "I got the diabetes",
+#           "content": "HALP",
+#           "user_id": 3
+#         }
+#       }'
+
+curl --include --request POST http://localhost:3000/posts \
+--header "Content-Type: application/json" \
+--data '{
+        "post": {
+          "title": "I love sugar!",
+          "content": "Its a problem",
+          "user_id": 2
+        }
+      }'
