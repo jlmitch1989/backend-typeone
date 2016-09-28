@@ -22,8 +22,8 @@ curl --include --request POST http://localhost:3000/posts \
 --header "Content-Type: application/json" \
 --data '{
         "post": {
-          "title": "I love sugar!",
+          "title": "Needles Suck!",
           "content": "Its a problem",
-          "user_id": 2
+          "user_id": 8
         }
       }'
