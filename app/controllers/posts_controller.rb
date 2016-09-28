@@ -1,10 +1,17 @@
-class PostsController < ApplicationController
+class PostsController < OpenReadController
   before_action :set_post, only: [:show, :update, :destroy]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    if params[:user] == 'current'
+      # p params
+      p current_user
+      # binding.pry
+      @posts = current_user.posts
+    else
+      @posts = Post.all
+    end
 
     render json: @posts
   end

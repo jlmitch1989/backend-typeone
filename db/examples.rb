@@ -16,3 +16,12 @@
 #                password: 'abc123',
 #                password_confirmation: nil)
 # end
+
+# posts = {
+#   'diabetes' => %w(Thats what I got)
+# }
+#
+# posts.each do |title|
+#   post = Post.find_or_create_by title: title
+#     post.create post unless post.exists? post
+# end
