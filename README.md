@@ -8,6 +8,6 @@ https://jlmitch1989.github.io/frontend-typeone
 https://github.com/jlmitch1989/frontend-typeone
 
 ## Associations:
-User has many posts
-User has many comments
+User has many posts <br>
+User has many comments <br>
 Posts has many comments
