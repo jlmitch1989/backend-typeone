@@ -25,7 +25,8 @@ class PostsController < OpenReadController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
+    # @post = Post.new(post_params)
 
     if @post.save
       render json: @post, status: :created, location: @post
