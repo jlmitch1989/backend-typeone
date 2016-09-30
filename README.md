@@ -1,14 +1,13 @@
-## typeOne Back-end
-
+# typeOne Back-end
 This is my back-end built with Ruby on Rails and a PostgreSQL database for
 my typeOne SPA.
 
-# Deployed App
+## Deployed App
 https://jlmitch1989.github.io/frontend-typeone
-# Front-end repo
+## Front-end repo
 https://github.com/jlmitch1989/frontend-typeone
 
-# Associations:
+## Associations:
 User has many posts
 User has many comments
 Posts has many comments
