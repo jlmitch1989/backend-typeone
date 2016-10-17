@@ -62,6 +62,6 @@ class PostsController < OpenReadController
   end
 
   def post_params
-    params.require(:post).permit(:title, :content, :user_id)
+    params.require(:post).permit(:title, :content, :user_id, :user)
   end
 end
